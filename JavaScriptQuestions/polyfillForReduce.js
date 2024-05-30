@@ -19,7 +19,7 @@ Array.prototype.myReduce = function (callbackFunction, initialValue) {
   let accumulator = initialValue;
   for (let i = 0; i < this.length; i++) {
     if(accumulator !== undefined){
-        callbackFunction.call(this, accumulator, this[i], i , this);
+        accumulator = callbackFunction.call(this, accumulator, this[i], i , this);
     } else{
         // => In case of reduce if there dont have initial value it will return the first value from array
         accumulator = this[i];

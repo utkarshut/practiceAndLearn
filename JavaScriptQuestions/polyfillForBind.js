@@ -3,8 +3,8 @@ const name = {
     lastName: "Bhardwaj"
 }
 
-function printName(home,india){
-    console.log(this.firstName+" "+this.lastName+" ,"+home+" "+india);
+function printName(home,country){
+    console.log(this.firstName+" "+this.lastName+" ,"+home+" "+country);
 }
 // => BINDED function return an function that can be invoked later
 const bindedFunction = printName.bind(name,"original bind");
