@@ -18,3 +18,26 @@ function fibonacci(n) {
 
 console.log(fibonacci(10)); // Calculate the 10th Fibonacci number
 console.log(fibonacci(20)); // Calculate the 20th Fibonacci number
+
+
+const memoize = (fn)=>{
+  const cache = {};
+  return function(...args){
+   const key =  JSON.stringify(args);
+   if(cache[key]){
+    console.log("INSIDE CACHE")
+    return cache[key];
+   }else{
+    cache[key] = fn.apply(this,args);
+    return cache[key];
+   }
+  }
+}
+
+function sum(a,b){
+   return a+b;
+}
+
+const mem = memoize(sum);
+console.log(mem(1,2));
+console.log(mem(1,2));
