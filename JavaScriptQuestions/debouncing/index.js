@@ -26,7 +26,24 @@ function debounceFunction(searchFunctio,delay) {
     }
 }
 
-const betterFunction = debounceFunction(search,300);
+
+function debountFunctionWithCancel(fn, delay){
+  let timeout;
+  const debounceFunction = (...args)=>{
+    clearTimeout(timeout);
+    let context = this;
+    timeout = setTimeout(()=>{
+      fn.apply(context,args)
+    }, delay)
+  }
+  debounceFunction.cancel = ()=>{
+    clearTimeout(timeout);
+    timeout = null;
+  }
+  return debounceFunction;
+}
+
+const betterFunction = debountFunctionWithCancel(search,300);
 
 /**
  * Throttle function will trigger after fixed interval of time

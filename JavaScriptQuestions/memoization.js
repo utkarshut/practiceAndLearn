@@ -41,3 +41,23 @@ function sum(a,b){
 const mem = memoize(sum);
 console.log(mem(1,2));
 console.log(mem(1,2));
+
+
+
+const memoizeFn = (fn)=>{
+  let cache = {};
+  return function(...args){
+     const key = JSON.stringify(args);
+     if(cache[key]){
+      console.log("INSIDE CACHE 2")
+      return cache[key];
+     }else{
+      cache[key] = fn.apply(this,args);
+      return cache[key];
+     }
+  }
+}
+
+const mem1 = memoizeFn(sum);
+console.log(mem1(1,2));
+console.log(mem1(1,2));
