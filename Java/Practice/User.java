@@ -1,3 +1,4 @@
+package Practice;
 import java.util.*;
 
 public class User implements Comparable<User> {

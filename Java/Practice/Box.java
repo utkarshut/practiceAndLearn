@@ -1,3 +1,4 @@
+package Practice;
 public class Box {
     private Object object;
 
