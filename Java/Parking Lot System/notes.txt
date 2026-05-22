@@ -1,0 +1,66 @@
+Parking Lot System (Very Common)
+Park vehicle
+Remove vehicle
+Find free slot
+Different vehicle types:
+Bike, Car, Truck
+Parking fee calculation
+
+
+
+Functional 
+Can park different type of vehicle Bike, Car, Truck
+Can remove parked vehicle 
+Parking fee calculation
+Need to store parked time and removed time 
+Find free slot
+
+Non Functional required 
+Parking number can be dynamic based on location 
+save in local later can switch to DB
+dynamic calculation price later can have subscription
+
+Entity
+------
+Vehicle
+  - number
+  - type
+
+ParkingSlot
+  - slotId
+  - supportedType
+  - occupied
+  - parkedVehicle
+
+ParkingLot
+  - parkingLotId
+  - location
+  - List<ParkingSlot>
+
+Ticket
+  - ticketId
+  - vehicle
+  - slot
+  - entryTime
+  - exitTime
+  - amount
+
+Service
+--------
+ParkingService
+  - parkVehicle()
+  - removeVehicle()
+  - findFreeSlot()
+
+Repository
+-----------
+ParkingRepository
+TicketRepository
+
+Strategy
+----------
+FeeStrategy
+  - calculateFee()
+
+
+
