@@ -1,0 +1,454 @@
+
+Do in this order:
+    Two Sum
+    Contains Duplicate
+    Frequency Counter. Max frequency elements  ===>
+    Reverse Words
+    Valid Palindrome. ===> Regex
+    Move Zeroes
+    Merge Sorted Array —> remember
+    Valid Parentheses revise java 
+    Min Stack.  VVI —> MUST
+    Browser History — MUST  and make in java 
+    Reason: Builds confidence + patterns.
+
+STEP 2 — Important Medium Problems
+    Longest Substring Without Repeat -> Repeat
+    Subarray Sum = K —> MUST 
+    Group Anagrams
+    Longest Consecutive Sequence
+    Top K Frequent Elements
+    Meeting Rooms II
+    Now you know:
+
+HashMap
+Sliding Window
+Heap
+Comparator
+
+
+STEP 3 — Tree / Hierarchy
+    BFS Level Order
+    DFS Traversal
+    Number of Islands
+    Validate BST
+    Kth Smallest BST
+
+STEP 4 — Cisco System/OOP Coding
+    VERY IMPORTANT
+    Network Status System 	•	Algorithm design for loosely defined problems (e.g., Network Status Bar)
+
+    Alert Manager
+    Logger System
+    Browser History Design
+    Task Scheduler
+    LRU Cache
+    Device heart beat tracker
+    This section is extremely important for Cisco because:
+    “Algorithm design for loosely defined problems” “Network Status Bar”
+    This screams real-world modeling.
+
+STEP 5 — Angular High Priority
+    Change Detection
+    OnPush
+    Zone.js
+    markForCheck vs detectChanges
+    RxJS operators
+    Subject vs BehaviorSubject vs ReplaySubject
+    Angular performance
+    MFE architecture
+
+STEP 6 — JS Internals
+    Closure
+    Hoisting
+    Event Loop
+    Promise vs async-await
+    Microtask vs Macrotask
+    Debounce vs Throttle
+
+STEP 7 — Java Quick Revision
+    String Pool
+    equals/hashCode
+    HashMap internals
+    Immutable class
+    Comparable vs Comparator
+    ConcurrentHashMap
+
+STEP 8 — Quick Revision Only
+    Spring basics
+    SQL joins
+    Nth highest salary
+    Index basics
+
+STEP 9 — MUST PRACTICE SPEAKING
+    Slow UI debugging
+    Memory leak debugging
+    Production issue
+    Resume project deep dive
+    MFE architecture storytelling
+    Problem-solving in complex scenarios
+    Debugging and issue resolution approach
+    Data structures and their practical applications
+    Core computer science fundamentals in real-world systems
+
+
+
+
+
+
+FINAL MOST-PROBABLE CISCO QUESTION LIST
+(ordered by probability + ROI)
+SECTION A — MUST PRACTICE LIVE CODING (Highest Priority)
+A1. HashMap / Array / String (VERY HIGH)
+1. Top K Frequent Elements
+Pattern:
+logs
+alerts
+events
+frequent pages
+Must know:
+HashMap
+Heap/PriorityQueue
+
+2. Frequency Counter
+Examples:
+duplicate detection
+most repeated
+count events
+Problems:
+Contains duplicate
+First unique
+Frequency map
+
+3. Sliding Window (Easy–Medium Only)
+Practice:
+Longest substring without repeating characters
+Max sum subarray size K
+Fixed window average
+Reason: Cisco “network signal” type questions can become sliding window.
+
+4. Reverse Words in String
+Example:
+"I am Indian"
+→
+"Indian am I"
+Very common easy live-coding warmup.
+
+A2. Tree / Hierarchy (VERY HIGH FOR YOU)
+Your resume has:
+100K+ node hierarchy optimization.
+Practice:
+5. BFS Level Order Traversal
+6. DFS Traversal
+7. Flatten Tree / Parent Child Search
+Follow-up question:
+How optimize huge tree rendering?
+Answer:
+virtual scrolling
+flatten tree
+lazy loading
+trackBy
+memoization
+
+A3. Practical System Coding (VERY HIGH)
+This is what I think is most Cisco-like.
+8. Network Status Bar ⭐⭐⭐⭐⭐
+Most important.
+Design:
+registerDevice()
+updateStatus()
+getCriticalDevices()
+getOverallHealth()
+Statuses:
+UP
+DOWN
+WARNING
+UNKNOWN
+Practice:
+enum
+map
+filtering
+aggregation
+
+9. Alert Manager / Notification System ⭐⭐⭐⭐⭐
+Functions:
+addAlert()
+resolveAlert()
+getHighestPriority()
+Use:
+PriorityQueue
+HashMap
+
+10. Browser History ⭐⭐⭐⭐
+Implement:
+visit()
+back()
+forward()
+Stack-based.
+Frontend-heavy interviewer may like this.
+
+11. LRU Cache ⭐⭐⭐⭐
+Implement:
+get()
+put()
+Must know:
+HashMap + DoublyLinkedList
+O(1)
+Only because Cisco interviews ask this frequently.
+
+12. Logger / Task Scheduler ⭐⭐⭐⭐
+Practice one.
+Use:
+PriorityQueue
+Filter
+Builder
+You already practiced logger.
+
+SECTION B — ANGULAR (EXTREMELY HIGH)
+B1. Change Detection ⭐⭐⭐⭐⭐
+Questions:
+How Angular change detection works?
+OnPush vs default?
+markForCheck?
+detectChanges?
+Zone.js?
+This is near guaranteed.
+
+B2. RxJS ⭐⭐⭐⭐⭐
+Must know:
+switchMap
+Search API
+mergeMap
+Parallel APIs
+concatMap
+Sequential
+exhaustMap
+Login button
+Also:
+Subject vs BehaviorSubject vs ReplaySubject
+Very probable.
+
+B3. Angular Performance ⭐⭐⭐⭐⭐
+Question:
+Slow UI. What do you do?
+Answer:
+OnPush
+trackBy
+virtual scrolling
+debounce
+memoization
+lazy loading
+splitting
+caching
+
+B4. MFE (YOUR BIGGEST ADVANTAGE) ⭐⭐⭐⭐⭐
+Most likely questions:
+Why Module Federation?
+Shared dependency issue?
+Version mismatch?
+React inside Angular?
+Shell ↔ Remote communication?
+Independent deployment?
+Remote failure handling?
+You should be very strong here.
+
+B5. JS Internals (HIGH)
+Practice:
+Closures
+Hoisting
+Event Loop
+Promise vs async/await
+Microtask vs Macrotask
+var vs let vs const
+Because interviewer profile is JS-heavy.
+
+SECTION C — JAVA (MEDIUM PRIORITY)
+C1. Core Java
+HashMap internals
+equals/hashCode
+String Pool
+Immutable class
+Comparable vs Comparator
+Overloading vs Overriding
+
+C2. Concurrency Basics
+synchronized
+ConcurrentHashMap
+ExecutorService
+Basic only.
+
+C3. Spring (Quick Revision Only)
+Know basics:
+@Transactional
+@RestController
+@PathVariable vs @RequestParam
+Global exception handling
+Don't go deep.
+
+SECTION D — SQL (MEDIUM)
+Practice:
+Nth highest salary
+INNER JOIN vs LEFT JOIN
+GROUP BY
+Index basics
+Because backend/fullstack round may touch quickly.
+
+SECTION E — DEBUGGING (VERY HIGH)
+Cisco explicitly mentioned this.
+Prepare answers for:
+Slow UI
+Memory leak
+API latency
+Subscription leak
+Infinite rerender
+Production bug
+Your answer structure:
+Reproduce
+Logs
+Profiler
+Network
+Root cause
+Fix
+Regression validation
+
+SECTION F — RESUME DEEP DIVE (MUST)
+Practice these exact questions:
+Explain your MFE architecture
+Biggest production challenge?
+Why Redis?
+Why Kafka?
+Why JSONB?
+Materialized view?
+100K node optimization?
+React integration inside Angular?
+Release issue you solved?
+
+TOP 20 “DO NOT MISS” QUESTIONS
+Network Status System
+Alert Manager
+LRU Cache
+Browser History
+Top K Frequent
+Sliding Window
+BFS/DFS Tree
+Reverse Words
+Angular Change Detection
+OnPush
+RxJS operators
+Subject vs BehaviorSubject
+UI performance optimization
+MFE architecture
+JS event loop
+Closures
+HashMap internals
+String pool
+Debugging production issue
+Resume project deep dive
+If you finish these properly, I’d feel confident for your Cisco Round 1.
+
+1. HashMap / Frequency / Lookup
+
+    VERY HIGH probability
+
+    Used in:
+
+    network status
+    logs
+    alerts
+    caching
+    duplicate detection
+
+    Example:
+
+    Find unhealthy devices
+
+    Map<String, DeviceStatus> map = new HashMap<>();
+
+    Practice:
+
+    frequency count
+    grouping
+    duplicate detection
+    lookup optimization
+
+2. Heap / PriorityQueue
+
+    HIGH probability
+
+    Used in:
+
+    Top K alerts
+    most failing devices
+    highest severity events
+
+3. Sliding Window
+
+    HIGH ROI
+
+    Real use:
+
+    API rate limit
+
+    100 requests in 1 minute
+
+    Practice:
+
+    longest substring
+    fixed window
+    variable window
+4. Queue / Deque
+
+    HIGH probability
+
+    Real-world:
+
+    retries
+    message processing
+    event buffering
+
+    Example:
+
+    process network events                  
+
+5. Sorting + Comparator
+
+    VERY HIGH
+
+    Example:
+
+    sort devices by severity / latency
+
+    Practice:
+
+    Comparator.comparing(Device::getLatency)
+6. Stack
+
+    Medium
+
+    Used in:
+
+    expression
+    undo
+    parser
+7. BFS/DFS basics
+
+    Low-medium
+
+    Maybe:
+
+    dependency graph
+    service traversal
+
+    Know basics only.
+
+8. LRU Cache
+
+    VERY HIGH ROI for senior role
+
+    Because:
+
+    caching
+    API optimization
+    performance
+
+    You should know:

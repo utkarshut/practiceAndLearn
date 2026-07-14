@@ -1,0 +1,24 @@
+what is api gateway
+what is observable in angular
+why java have default method in interface
+sql pagination 
+
+
+2nd Round
+
+How java handle memory and garbage collectors ? where static store, does it get cleared ?
+which java versions
+5 feature of java 17 and 11 which all GC
+class loader method and what it is
+reflection ? how you create it
+why you want to changes
+what is serializable and deserializable
+can you create custom marker interface
+boundedContext 
+How to control the data in a distributed environment 
+choreographer orchestore
+hibernate get load 
+interface same method implement 
+ng route and url route difference
+how to control Memory leaks in Angular?
+domain driven design

@@ -1,0 +1,14 @@
+Design a Rate Limiter
+
+
+- functional Requirement
+    User A → max 100 requests/min
+    00:00–00:59 → 100 requests
+    01:00 → fresh reset
+    last 100 min requests
+    error if not in limit ?
+
+- Non functional
+    if distributed then shared resource for now in memory fine
+    Is rate limiting per API instance or globally across servers?
+

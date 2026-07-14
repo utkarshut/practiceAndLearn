@@ -1,0 +1,53 @@
+Problem:
+Design Network Status Bar
+
+Functional Requirements
+- Show overall network health:
+    GREEN / YELLOW / RED
+- Router metrics:
+    latency
+    packet loss
+    cpu
+    link UP/DOWN
+- Router priority:
+    CORE = 10
+    REGIONAL = 5
+    EDGE = 1
+- Offline handling:
+    No report for 5 mins → OFFLINE
+
+- Scale
+  100,000 routers
+  Real-time updates
+  Peak 200k updates/sec
+
+Rules
+
+    GREEN
+    - latency < 100ms
+    - packet loss < 1%
+    - cpu < 70%
+    - link UP
+
+    YELLOW
+    - latency 100–300ms
+    - packet loss 1–3%
+    - cpu 70–90%
+
+    RED
+    - latency > 300ms
+    - packet loss > 3%
+    - cpu > 90%
+    - link DOWN
+
+Clarifications Asked
+    ✔ How many routers?
+    ✔ Realtime?
+    ✔ Threshold rules?
+    ✔ Stale routers?
+    ✔ Update frequency?
+    ✔ Configurable threshold?
+    ✔ Aggregation logic?
+
+Open Question
+- How is overall network health calculated?

@@ -1,5 +1,7 @@
 import java.util.Arrays;
 import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Revision5 {
@@ -18,6 +20,9 @@ public class Revision5 {
        // max
         System.out.println((Arrays.stream(arr).boxed().max(Integer::compare).orElse(-1)));
 
-        
+        Map<String, List<Integer>> map = Map.of("RED",List.of(1,2,3),"GREEN",List.of(1,2));
+        System.out.println(map.entrySet().stream()
+                 .collect(Collectors.toMap(e->e.getKey(), 
+                    e->e.getValue().stream().mapToInt(Integer::intValue).sum())));
     }
 }

@@ -1,0 +1,31 @@
+
+Binary tree construction using inorder and postorder traversal.
+
+2nd round was bit a discussion but you should be well versed with 
+nslookup and network related linux commands.
+Networking questions and they ask about from your resume.
+DSA question based on graph
+
+Round 1: 1. Reverse array in-place. 
+2. Construct target string using characters from origin string. 
+3. Construct linux file path from an array of strings. 
+4. Explain memory space of process in linux. 
+5. Debug experience with gdb 
+6. IPC questions and design a server-client scenario.
+What is VPN ? How to check network reachability
+
+
+
+Project currently working on + design patterns employed and resume based questions in details to check the depth. 2. System design interview - asked me to mention an approach to design a microservice for retail client. Followed up by questions on why I've chosen a particular tech stack and questions on how to tackle certain situations in real word on such services (inventory + payments etc). 3. DS based test - question was bit easy.
+
+• Round 1 (Technical):
+Covered HTTP vs WebSockets, detailed discussion on both my projects, computer networks fundamentals and three DSA problems (easy to medium, LeetCode level).
+
+• Round 2 (Technical):
+Mainly focused on OS concepts, in-depth project discussions, and Golang fundamentals.
+
+• Round 3 (Technical):
+An open-ended discussion around the design decisions of my projects, along with DBMS basics.
+
+• Round 4 (HR):
+An HR discussion where the preferred location was asked and behavioral questions were asked.

@@ -1,0 +1,80 @@
+
+
+Network Monitoring Platform
+
+Design a Service Health Indicator for enterprise customers
+
+Healthy
+Warning
+Critical
+
+what all the things user wants to Monitoring ? like cpuUsage MemoryUsage NetworkLatency ?
+How many Device there will be ?
+realtime ? For how long queue ?
+Does it need filter on device types ?
+
+- Functional Requirement 
+-> There are around 50,000 services.
+-> monitor services, not physical devices
+->  Services reports
+                serviceId
+                cpuUsage
+                memoryUsage
+                errorRate
+                responseTime
+                timestamp
+-> single status
+      Healthy
+      Warning
+      Critical
+-> We need one overall status for customer
+
+Classes
+  Service  ->  serviceId ,  serviceName, serviceStatus
+  ServiceReports -> 
+   String serviceId, 
+   double cpuUsage;
+   double memoryUsage;
+   double errorRate;
+   long responseTime;
+   long timestamp;
+  ServicesStatusCounter
+     Map<String,Intger> servicesStatusCounter
+     updateServicesStatusCounter
+     getCurrentStatusMap()
+     calculatePercentage()
+     
+
+Service 
+  HealthStatusService
+    checkHeartBeat()
+    calculateGlobalHealth()
+    calculateServiceHealth()
+
+Interface
+  healthCalculationRule
+
+ enums
+   HealthMetric CPU MEMORY ERROR_RATE RESPONSE_TIME
+   ServiceStatus HEALTHY WARNING CRITICAL
+
+
+Healthy
+- CPU < 70%
+- Memory < 75%
+- Error rate < 2%
+- Response time < 300ms
+
+Warning
+- CPU 70–90%
+- Memory 75–90%
+- Error rate 2–5%
+- Response time 300–1000ms
+
+Critical
+- CPU > 90%
+- Memory > 90%
+- Error rate > 5%
+- Response time > 1000ms
+
+// how to check heartbeat ? 
